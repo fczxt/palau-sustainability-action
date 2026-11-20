@@ -1,0 +1,2980 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帛琉南島永續實踐計畫 | 青年百億海外圓夢基金計畫 N-10-3 海外翱翔組</title>
+  <meta name="description" content="教育部青年發展署「青年百億海外圓夢基金計畫－海外翱翔組」N-10-3 帛琉南島永續實踐計畫個人探索與田野實踐入口網站。面向對海外探索、永續發展及跨文化交流有興趣的大專院校青年學生。">
+  <meta name="theme-color" content="#0a4b6e">
+  <style>
+    /* ==========================================================================
+       CSS RESET & VARIABLES
+       ========================================================================== */
+    :root {
+      --primary: #0a4b6e;
+      --primary-light: #167aa6;
+      --primary-dark: #062b40;
+      --accent-lagoon: #00b4d8;
+      --accent-reef: #06d6a0;
+      --accent-coral: #ef476f;
+      --accent-gold: #ffd166;
+      --bg-main: #f7fafc;
+      --bg-card: #ffffff;
+      --bg-alt: #edf6f9;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --text-light: #9ca3af;
+      --border: #e5e7eb;
+      --border-focus: #00b4d8;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.12), 0 10px 10px -5px rgba(0,0,0,0.04);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    img, svg {
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, var(--primary), var(--accent-lagoon));
+      color: white;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(10, 75, 110, 0.3);
+    }
+
+    .brand-text small {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--accent-lagoon);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: var(--transition);
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary);
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--accent-lagoon);
+      border-radius: var(--radius-full);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: #fff !important;
+      padding: 0.5rem 1.1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(10, 75, 110, 0.25);
+      transition: var(--transition);
+    }
+
+    .nav-cta:hover {
+      box-shadow: 0 4px 12px rgba(10, 75, 110, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--primary);
+      padding: 0.5rem;
+    }
+
+    /* Mobile Nav Overlay */
+    @media (max-width: 900px) {
+      .menu-toggle {
+        display: block;
+      }
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem 2rem;
+        gap: 1.25rem;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-150%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+      .nav-links.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .nav-cta {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero {
+      position: relative;
+      background: linear-gradient(170deg, #062b40 0%, #0a4b6e 40%, #086b94 80%, #00b4d8 100%);
+      color: white;
+      padding: 4.5rem 0 5rem 0;
+      overflow: hidden;
+    }
+
+    .hero-decor {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at 80% 20%, rgba(6, 214, 160, 0.2), transparent 45%),
+                  radial-gradient(circle at 10% 80%, rgba(255, 209, 102, 0.15), transparent 40%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(8px);
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-gold);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-title span {
+      background: linear-gradient(90deg, #ffffff 40%, var(--accent-gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.18rem;
+      line-height: 1.7;
+      color: #e2f1f8;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 0.75rem 1.6rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #ffd166, #f9c74f);
+      color: #062b40;
+      box-shadow: 0 4px 14px rgba(255, 209, 102, 0.4);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255, 209, 102, 0.55);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.12);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(6px);
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 0.9rem 1.1rem;
+      border-radius: var(--radius-md);
+      backdrop-filter: blur(4px);
+    }
+
+    .stat-num {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--accent-reef);
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    .stat-num small {
+      font-size: 0.85rem;
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: #d1e7f3;
+      margin-top: 2px;
+    }
+
+    /* Palau Pledge Banner */
+    .pledge-banner {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.75rem;
+      color: var(--text-main);
+      box-shadow: var(--shadow-xl);
+      margin-top: 2rem;
+      border-left: 6px solid var(--accent-lagoon);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .pledge-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.98rem;
+    }
+
+    .pledge-quote {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.55;
+    }
+
+    .pledge-footer {
+      font-size: 0.8rem;
+      color: var(--primary-light);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 3.5rem 0 4rem 0;
+      }
+      .hero-title {
+        font-size: 2.05rem;
+      }
+      .hero-subtitle {
+        font-size: 1.02rem;
+      }
+    }
+
+    /* ==========================================================================
+       SECTION COMMON STYLES
+       ========================================================================== */
+    .section {
+      padding: 4.5rem 0;
+    }
+
+    .section-alt {
+      background-color: var(--bg-alt);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 3rem auto;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary-light);
+      background: rgba(0, 180, 216, 0.12);
+      padding: 0.3rem 0.85rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-desc {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       METHODOLOGY & ETHICS CARDS (ESG + South Island View)
+       ========================================================================== */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+      border-color: rgba(0, 180, 216, 0.4);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.4rem;
+    }
+
+    .icon-e { background: rgba(6, 214, 160, 0.15); color: #059669; }
+    .icon-s { background: rgba(0, 180, 216, 0.15); color: #0284c7; }
+    .icon-g { background: rgba(255, 209, 102, 0.25); color: #d97706; }
+    .icon-method { background: rgba(239, 71, 111, 0.15); color: #e11d48; }
+
+    .card-title {
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 0.6rem;
+    }
+
+    .card-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-alt);
+      color: var(--primary);
+    }
+
+    /* Roles Banner */
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .role-box {
+      background: white;
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary-light);
+    }
+
+    .role-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .role-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       DATE SELECTOR & ITINERARY
+       ========================================================================== */
+    .itinerary-controls {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 2rem;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .filter-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-right: 0.4rem;
+    }
+
+    .pill-btn {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .pill-btn:hover {
+      background: #e2e8f0;
+      color: var(--primary);
+    }
+
+    .pill-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    /* Horizontal Date Scroll bar */
+    .date-scroll-wrapper {
+      position: relative;
+    }
+
+    .date-scroll {
+      display: flex;
+      gap: 0.65rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent-lagoon) transparent;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .date-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+    .date-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .date-scroll::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 4px;
+    }
+
+    .date-btn {
+      flex: 0 0 auto;
+      min-width: 95px;
+      padding: 0.75rem 0.65rem;
+      border-radius: var(--radius-md);
+      background: var(--bg-main);
+      border: 1px solid var(--border);
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .date-btn:hover {
+      border-color: var(--accent-lagoon);
+      background: white;
+      transform: translateY(-2px);
+    }
+
+    .date-btn.active {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      border-color: var(--primary);
+      box-shadow: 0 4px 10px rgba(10, 75, 110, 0.25);
+    }
+
+    .date-btn .d-day {
+      font-size: 0.7rem;
+      font-weight: 700;
+      opacity: 0.85;
+      text-transform: uppercase;
+    }
+
+    .date-btn .d-date {
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    .date-btn .d-theme {
+      font-size: 0.72rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 85px;
+    }
+
+    .date-btn.active .d-theme {
+      color: var(--accent-gold);
+    }
+
+    /* Itinerary Detail Container */
+    .itinerary-display {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .itin-header {
+      background: linear-gradient(135deg, #0a4b6e, #167aa6);
+      color: white;
+      padding: 1.5rem 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .itin-date-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+
+    .itin-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-top: 0.35rem;
+      line-height: 1.3;
+    }
+
+    .itin-sdgs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .sdg-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.9);
+      color: #062b40;
+    }
+
+    .itin-body {
+      padding: 1.75rem;
+    }
+
+    .itin-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .itin-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .timeline-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timeline-list {
+      position: relative;
+      padding-left: 1.5rem;
+      list-style: none;
+    }
+
+    .timeline-list::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: #cbd5e1;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.25rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-bullet {
+      position: absolute;
+      left: -1.5rem;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: white;
+      border: 3px solid var(--accent-lagoon);
+    }
+
+    .timeline-time {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary-light);
+    }
+
+    .timeline-text {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin: 0.15rem 0 0.35rem 0;
+    }
+
+    .timeline-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Spot & Navigation Subcard */
+    .spot-box {
+      background: var(--bg-alt);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      border: 1px solid #dbeafe;
+      margin-bottom: 1rem;
+    }
+
+    .spot-box:last-child {
+      margin-bottom: 0;
+    }
+
+    .spot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+    }
+
+    .spot-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+    }
+
+    .maps-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #ffffff;
+      color: #1a73e8;
+      border: 1px solid #c7d8ee;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .maps-link-btn:hover {
+      background: #1a73e8;
+      color: #ffffff;
+      border-color: #1a73e8;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(26, 115, 232, 0.3);
+    }
+
+    .spot-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+
+    .spot-esg {
+      font-size: 0.8rem;
+      background: #ffffff;
+      padding: 0.4rem 0.6rem;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent-reef);
+      color: #065f46;
+    }
+
+    .fieldwork-tips {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 4px solid var(--accent-gold);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .tips-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #92400e;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 0.35rem;
+    }
+
+    .tips-body {
+      font-size: 0.85rem;
+      color: #78350f;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       CHECKLIST SECTION (行前準備清單)
+       ========================================================================== */
+    .checklist-wrapper {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      padding: 2rem;
+    }
+
+    .progress-bar-container {
+      background: var(--bg-alt);
+      border-radius: var(--radius-full);
+      height: 14px;
+      overflow: hidden;
+      margin: 1rem 0 1.5rem 0;
+      position: relative;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-lagoon), var(--accent-reef));
+      border-radius: var(--radius-full);
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+
+    .progress-stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .checklist-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .checklist-categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .add-item-bar {
+      display: flex;
+      gap: 0.5rem;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-text {
+      flex: 1;
+      padding: 0.65rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .input-text:focus {
+      border-color: var(--accent-lagoon);
+      box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.15);
+    }
+
+    .btn-add {
+      background: var(--primary);
+      color: white;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-add:hover {
+      background: var(--primary-light);
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 0.85rem 1rem;
+      background: var(--bg-main);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .check-item:hover {
+      background: white;
+      border-color: #cbd5e1;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .check-item.completed {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+
+    .custom-checkbox {
+      margin-top: 3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 2px solid #94a3b8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+
+    .check-item.completed .custom-checkbox {
+      background: var(--accent-reef);
+      border-color: var(--accent-reef);
+      color: white;
+    }
+
+    .check-content {
+      flex: 1;
+    }
+
+    .check-title {
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.4;
+      transition: var(--transition);
+    }
+
+    .check-item.completed .check-title {
+      text-decoration: line-through;
+      color: var(--text-light);
+    }
+
+    .check-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      line-height: 1.35;
+    }
+
+    .check-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+
+    .badge-doc { background: #e0f2fe; color: #0369a1; }
+    .badge-eco { background: #dcfce7; color: #15803d; }
+    .badge-field { background: #fef3c7; color: #b45309; }
+    .badge-life { background: #f3e8ff; color: #7e22ce; }
+
+    .btn-delete-item {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      padding: 2px;
+      opacity: 0.5;
+      transition: var(--transition);
+    }
+
+    .btn-delete-item:hover {
+      color: var(--accent-coral);
+      opacity: 1;
+    }
+
+    /* ==========================================================================
+       BUDGET & EXPENSES SECTION (預算花費紀錄)
+       ========================================================================== */
+    .budget-dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .budget-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .budget-card-accent {
+      border-top: 4px solid var(--primary-light);
+    }
+    .budget-card-spent {
+      border-top: 4px solid var(--accent-coral);
+    }
+    .budget-card-remain {
+      border-top: 4px solid var(--accent-reef);
+    }
+    .budget-card-rate {
+      border-top: 4px solid var(--accent-gold);
+    }
+
+    .budget-card-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .budget-card-value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin: 0.35rem 0 0.2rem 0;
+    }
+
+    .budget-card-sub {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    .expense-control-panel {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .expense-form-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1.5fr auto;
+      gap: 0.75rem;
+      align-items: flex-end;
+    }
+
+    @media (max-width: 900px) {
+      .expense-form-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .expense-form-grid .btn-submit-expense {
+        grid-column: span 2;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .form-group label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .form-input {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      font-size: 0.88rem;
+      outline: none;
+    }
+    .form-input:focus {
+      border-color: var(--accent-lagoon);
+    }
+
+    .btn-submit-expense {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      border: none;
+      padding: 0.65rem 1.4rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      height: 40px;
+    }
+
+    .btn-submit-expense:hover {
+      box-shadow: 0 4px 10px rgba(10, 75, 110, 0.25);
+    }
+
+    /* Expense List Table */
+    .table-container {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      overflow-x: auto;
+    }
+
+    .expense-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .expense-table th {
+      background: var(--bg-alt);
+      color: var(--primary);
+      font-weight: 700;
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    .expense-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid #f1f5f9;
+      color: var(--text-main);
+    }
+
+    .expense-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .expense-table tr:hover td {
+      background-color: #f8fafc;
+    }
+
+    .cat-tag {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .cat-transport { background: #e0f2fe; color: #0284c7; }
+    .cat-stay { background: #fef3c7; color: #b45309; }
+    .cat-permit { background: #dcfce7; color: #16a34a; }
+    .cat-field { background: #f3e8ff; color: #9333ea; }
+    .cat-food { background: #fee2e2; color: #dc2626; }
+    .cat-misc { background: #f1f5f9; color: #475569; }
+
+    /* ==========================================================================
+       FIELDWORK PHRASES & INTERVIEWS
+       ========================================================================== */
+    .phrases-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .phrase-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-lagoon);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .phrase-context {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent-lagoon);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+    }
+
+    .phrase-en {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      line-height: 1.4;
+      margin-bottom: 0.35rem;
+    }
+
+    .phrase-zh {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .phrase-note {
+      font-size: 0.78rem;
+      color: #b45309;
+      background: #fef3c7;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      margin-top: 0.6rem;
+      display: inline-block;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      background: #062b40;
+      color: #94a3b8;
+      padding: 3.5rem 0 2rem 0;
+      border-top: 1px solid #1e40af;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-desc {
+      line-height: 1.6;
+      max-width: 440px;
+    }
+
+    .footer-col h4 {
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-lagoon);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.82rem;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #062b40;
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-md);
+      font-size: 0.88rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-xl);
+      border-left: 4px solid var(--accent-reef);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 9999;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12h20M2 12l5-5m-5 5 5 5M22 12l-5-5m5 5-5 5"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span>帛琉南島永續實踐</span>
+          <small>N-10-3 海外翱翔組</small>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="切換選單">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#methodology" class="nav-link">計畫理念</a></li>
+        <li><a href="#itinerary" class="nav-link">行程探索</a></li>
+        <li><a href="#checklist" class="nav-link">行前清單</a></li>
+        <li><a href="#budget" class="nav-link">預算花費</a></li>
+        <li><a href="#phrases" class="nav-link">田野錦囊</a></li>
+        <li><a href="#itinerary" class="nav-cta">點選日期看行程</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-decor"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          教育部青年發展署 · 青年百億海外圓夢基金計畫
+        </div>
+        <h1 class="hero-title">
+          青年出海，南島共鳴<br>
+          <span>帛琉南島永續實踐計畫</span>
+        </h1>
+        <p class="hero-subtitle">
+          拒絕觀光客獵奇，我們以南島同族的「平等、平視」視角走入帛琉。從洛克群島珊瑚礁到艾萊州百年男人會館（Bai），將生硬的 ESG 概念轉化為肉眼可見的田野線索，做一個有溫度的文化轉譯者。
+        </p>
+
+        <div class="hero-actions">
+          <a href="#itinerary" class="btn btn-gold">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            點選探索 15 天行程
+          </a>
+          <a href="#checklist" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+            行前裝備檢查表
+          </a>
+          <a href="#budget" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            預算收支管理
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-num">15 <small>天實踐</small></div>
+            <div class="stat-label">從行前培訓到深度田野</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5 <small>大目標</small></div>
+            <div class="stat-label">SDG 2, 4, 11, 12, 14, 15</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">18+ <small>處地標</small></div>
+            <div class="stat-label">全景點 Google Maps 導航</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">ESG <small>三維度</small></div>
+            <div class="stat-label">環境、社會與部落治理共治</div>
+          </div>
+        </div>
+
+        <!-- Palau Pledge Banner -->
+        <div class="pledge-banner">
+          <div class="pledge-header">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            帛琉誓詞（Palau Pledge）入境護照承諾
+          </div>
+          <div class="pledge-quote">
+            “Children of Palau, I take this pledge, as your guest, to preserve and protect your beautiful and unique island home. I vow to tread lightly, act kindly, and explore mindfully…”
+          </div>
+          <div class="pledge-footer">
+            帛琉是全球首個在入境簽證上要求簽署環保誓言的國家。我們的田野從這份承諾開始。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Methodology & Team Roles -->
+  <section class="section" id="methodology">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">田野調查方法論</span>
+        <h2 class="section-title">不做生硬報告，做有溫度的南島文化轉譯者</h2>
+        <p class="section-desc">
+          結合行前培訓的核心心法：以五感永續地圖捕捉真實生活，拒絕獵奇眼光，尊重母系部落倫理與治理智慧。
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon icon-e">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h3 class="card-title">E（環境）觀察法</h3>
+          <p class="card-text">
+            在洛克群島南方潟湖與森林示範區辨識「減塑、低碳、珊瑚友善防曬乳」的環境治理足跡。透過硨磲貝野放、紅樹林藍碳探勘，體驗人與海洋的共生平衡。
+          </p>
+          <div class="card-tags">
+            <span class="tag">#SDG14 海洋生態</span>
+            <span class="tag">#防曬乳禁令</span>
+            <span class="tag">#硨磲貝復育</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon icon-s">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="card-title">S（社會）觀察法</h3>
+          <p class="card-text">
+            走訪艾萊州百年男人會館（Bai）與在地早市，了解母系社會權力結構與文化傳承。觀察在地導覽員組成與部落青年動能，學習用平視視角對話。
+          </p>
+          <div class="card-tags">
+            <span class="tag">#SDG11 永續社區</span>
+            <span class="tag">#傳統男人會館</span>
+            <span class="tag">#母系社會倫理</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon icon-g">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="card-title">G（治理）觀察法</h3>
+          <p class="card-text">
+            理解「帛琉宣言（Palau Pledge）」與南島古老「Bul 禁漁與生態休養制度」如何與現代法規完美銜接，實現社區共治與原民傳統智慧的現代落實。
+          </p>
+          <div class="card-tags">
+            <span class="tag">#PalauPledge</span>
+            <span class="tag">#Bul傳統禁漁</span>
+            <span class="tag">#社區共治</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fieldwork Skills Box -->
+      <div style="margin-top: 2.5rem; background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+        <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          培訓實戰三大工具：影像導引、故事架構與現地微訪談
+        </h3>
+        <div class="grid-3" style="gap: 1.25rem;">
+          <div style="background: var(--bg-alt); padding: 1.25rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 700; color: var(--primary-dark); margin-bottom: 0.35rem;">📷 影像導引法 (Photo-Elicitation)</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">
+              用鏡頭捕捉「有故事」的畫面：一個貼著帛琉宣言的環保水瓶、一位修復 Bai 會所的耆老雙手，用視覺激發深層訪談對話。
+            </div>
+          </div>
+          <div style="background: var(--bg-alt); padding: 1.25rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 700; color: var(--primary-dark); margin-bottom: 0.35rem;">📖 故事架構法 (Storytelling)</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">
+              將實地觀察的質性零碎見聞，重新編排為引人共鳴的「低碳旅遊故事」或「臺帛原民智慧對話錄」，拒絕空洞數據。
+            </div>
+          </div>
+          <div style="background: var(--bg-alt); padding: 1.25rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 700; color: var(--primary-dark); margin-bottom: 0.35rem;">💬 5-10 分鐘現地微訪談</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">
+              以「聊天」代替填問卷，使用開放式引導，配合實戰破冰英文句型包，在店家與在地青年間建立真誠互信。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Roles -->
+      <div class="roles-grid">
+        <div class="role-box">
+          <div class="role-title"><span>隊長</span> <small style="font-size: 0.75rem; color: var(--primary-light);">Captain</small></div>
+          <div class="role-desc">掌握團隊責任鏈、時間進度協調、每日行動回顧與危機退場應變。</div>
+        </div>
+        <div class="role-box">
+          <div class="role-title"><span>觀察員</span> <small style="font-size: 0.75rem; color: var(--primary-light);">Observer</small></div>
+          <div class="role-desc">五感永續地圖速記、辨識 ESG 與社區互動細節、捕捉部落環境線索。</div>
+        </div>
+        <div class="role-box">
+          <div class="role-title"><span>文化記錄</span> <small style="font-size: 0.75rem; color: var(--primary-light);">Chronicler</small></div>
+          <div class="role-desc">質性微訪談主問者、故事架構梳理、臺帛原民文化語境轉譯。</div>
+        </div>
+        <div class="role-box">
+          <div class="role-title"><span>影像控管</span> <small style="font-size: 0.75rem; color: var(--primary-light);">Visual Director</small></div>
+          <div class="role-desc">Photo-Elicitation 拍攝、受訪者肖像授權確認、低干擾影像紀實。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Interactive Date Selector & Day-by-Day Itinerary -->
+  <section class="section section-alt" id="itinerary">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">完整行程日程表</span>
+        <h2 class="section-title">點選日期，探索每日田野與景點地圖</h2>
+        <p class="section-desc">
+          包含行前培訓（7/14）與帛琉實地考察（7/29 - 8/12 共15天），每個景點均支援 Google Maps 一鍵導航與田野任務引導。
+        </p>
+      </div>
+
+      <!-- Controls & Horizontal Date Selector -->
+      <div class="itinerary-controls">
+        <div class="filter-group">
+          <span class="filter-label">篩選主題：</span>
+          <button class="pill-btn active" data-filter="all">全部日程 (16天)</button>
+          <button class="pill-btn" data-filter="training">行前培訓</button>
+          <button class="pill-btn" data-filter="sdg14">海洋生態 SDG 14</button>
+          <button class="pill-btn" data-filter="sdg11">原民人文 SDG 11</button>
+          <button class="pill-btn" data-filter="sdg12">永續經濟 SDG 12</button>
+          <button class="pill-btn" data-filter="sdg15">陸域生態 SDG 15</button>
+        </div>
+
+        <!-- Date Scroll bar -->
+        <div class="date-scroll-wrapper">
+          <div class="date-scroll" id="dateScroll">
+            <!-- Populated via JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Selected Itinerary Detail Card -->
+      <div class="itinerary-display" id="itineraryDisplay">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Pre-Departure Checklist -->
+  <section class="section" id="checklist">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">行前必備檢查表</span>
+        <h2 class="section-title">行前準備清單（可勾選與自訂）</h2>
+        <p class="section-desc">
+          依據青年出海必備證件、帛琉海洋禁令（珊瑚友善）、田野調查記錄裝備與部落禮儀分類。進度自動儲存於瀏覽器。
+        </p>
+      </div>
+
+      <div class="checklist-wrapper">
+        <div class="progress-stats">
+          <span>完成進度：<span id="checkedCount">0</span> / <span id="totalCount">0</span> 項</span>
+          <span id="progressPercent" style="color: var(--accent-reef);">0%</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="progressBar"></div>
+        </div>
+
+        <div class="checklist-actions">
+          <div class="checklist-categories">
+            <button class="pill-btn active" data-check-cat="all">全部</button>
+            <button class="pill-btn" data-check-cat="doc">行政證件</button>
+            <button class="pill-btn" data-check-cat="eco">海洋永續裝備</button>
+            <button class="pill-btn" data-check-cat="field">田野研究工具</button>
+            <button class="pill-btn" data-check-cat="life">部落禮儀與生活</button>
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="pill-btn" id="btnToggleAll">全選 / 取消全選</button>
+            <button class="pill-btn" id="btnResetChecklist" style="color: var(--accent-coral);">重置預設</button>
+          </div>
+        </div>
+
+        <!-- Add Custom Item Input -->
+        <form class="add-item-bar" id="addChecklistForm">
+          <input type="text" class="input-text" id="newChecklistText" placeholder="新增個人專屬裝備（例如：空拍機申報文件、特殊藥品...）" required>
+          <select id="newChecklistCat" class="input-text" style="max-width: 150px;">
+            <option value="field">田野研究</option>
+            <option value="eco">海洋裝備</option>
+            <option value="doc">行政證件</option>
+            <option value="life">生活日常</option>
+          </select>
+          <button type="submit" class="btn-add">加入清單</button>
+        </form>
+
+        <!-- Checklist Item Grid -->
+        <ul class="check-list" id="checkListContainer">
+          <!-- Populated by JS -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Budget & Expense Tracker -->
+  <section class="section section-alt" id="budget">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">財務透明管理</span>
+        <h2 class="section-title">青年海外圓夢預算與花費紀錄</h2>
+        <p class="section-desc">
+          協助大專青年妥善管理教育部青年百億圓夢基金與自籌款項。支援 USD / TWD 即時匯率換算、明細新增與支出統計。
+        </p>
+      </div>
+
+      <!-- Budget Dashboard Cards -->
+      <div class="budget-dashboard">
+        <div class="budget-card budget-card-accent">
+          <div class="budget-card-label">計畫總預算 (USD)</div>
+          <div class="budget-card-value" id="dispTotalBudget">$2,500.00</div>
+          <div class="budget-card-sub" id="dispTotalBudgetTWD">約 NT$ 81,250</div>
+        </div>
+
+        <div class="budget-card budget-card-spent">
+          <div class="budget-card-label">累計已支出 (USD)</div>
+          <div class="budget-card-value" style="color: var(--accent-coral);" id="dispTotalSpent">$0.00</div>
+          <div class="budget-card-sub" id="dispTotalSpentTWD">約 NT$ 0</div>
+        </div>
+
+        <div class="budget-card budget-card-remain">
+          <div class="budget-card-label">剩餘可用額度 (USD)</div>
+          <div class="budget-card-value" style="color: var(--accent-reef);" id="dispRemaining">$2,500.00</div>
+          <div class="budget-card-sub" id="dispRemainingTWD">約 NT$ 81,250</div>
+        </div>
+
+        <div class="budget-card budget-card-rate">
+          <div class="budget-card-label">目前參考匯率 (USD:TWD)</div>
+          <div class="budget-card-value" style="font-size: 1.5rem;">
+            1 : <input type="number" id="exchangeRateInput" value="32.5" step="0.1" style="width: 70px; font-size: 1.2rem; font-weight: 700; border: 1px solid var(--border); border-radius: 4px; padding: 2px 4px;">
+          </div>
+          <div class="budget-card-sub">可自行微調換算率</div>
+        </div>
+      </div>
+
+      <!-- Add Expense Form Panel -->
+      <div class="expense-control-panel">
+        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          新增一筆田野支出項目
+        </h3>
+        <form id="addExpenseForm" class="expense-form-grid">
+          <div class="form-group">
+            <label for="expDate">日期</label>
+            <input type="date" id="expDate" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="expCategory">支出類別</label>
+            <select id="expCategory" class="form-input" required>
+              <option value="permit">海洋許可證/門票</option>
+              <option value="transport">交通與機票</option>
+              <option value="stay">住宿生活</option>
+              <option value="field">田野訪談/公關</option>
+              <option value="food">在地餐飲補給</option>
+              <option value="misc">永續文創/雜支</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="expAmount">金額 (USD $)</label>
+            <input type="number" id="expAmount" step="0.01" min="0" placeholder="50.00" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="expItem">項目名稱與說明</label>
+            <input type="text" id="expItem" placeholder="例如：洛克群島10天期海洋許可證" class="form-input" required>
+          </div>
+          <button type="submit" class="btn-submit-expense">新增紀錄</button>
+        </form>
+      </div>
+
+      <!-- Expense Table -->
+      <div class="table-container">
+        <table class="expense-table">
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>類別</th>
+              <th>項目說明</th>
+              <th>美金 (USD)</th>
+              <th>台幣換算 (TWD)</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="expenseTableBody">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; margin-top: 1rem; gap: 0.75rem;">
+        <button class="pill-btn" id="btnExportCSV">匯出 CSV 報表</button>
+        <button class="pill-btn" id="btnResetExpense" style="color: var(--accent-coral);">重置為示範支出</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Fieldwork Phrases & Dialogue Tips -->
+  <section class="section" id="phrases">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">田野溝通錦囊</span>
+        <h2 class="section-title">南島共鳴：日常田野英文破冰句型包</h2>
+        <p class="section-desc">
+          培訓精選句型：專為大專院校學生設計，以開放式引導代替封閉式問答，克服開口焦慮，尊重在地母系倫理。
+        </p>
+      </div>
+
+      <div class="phrases-grid">
+        <div class="phrase-card">
+          <div class="phrase-context">破冰開場 · 減塑與環保水瓶</div>
+          <div class="phrase-en">“Alii! I noticed this reusable bottle with the Palau Pledge sticker. Could you share what it means to your daily shop?”</div>
+          <div class="phrase-zh">「你好（Alii）！我注意到這個貼著帛琉誓詞的環保水壺，能跟我們聊聊這對您店裡日常的意義嗎？」</div>
+          <span class="phrase-note">💡 開放式提問，以「讚賞在地物件」作為破冰起點</span>
+        </div>
+
+        <div class="phrase-card">
+          <div class="phrase-context">觀光衝擊 · 帛琉誓詞推行回饋</div>
+          <div class="phrase-en">“Since the Palau Pledge was introduced, what interesting changes have you observed among visitors?”</div>
+          <div class="phrase-zh">「自從實施帛琉誓詞以來，您在來訪的旅客身上觀察到了哪些有趣的改變呢？」</div>
+          <span class="phrase-note">💡 引導受訪者分享具體故事，而非評價是與非</span>
+        </div>
+
+        <div class="phrase-card">
+          <div class="phrase-context">文化請益 · 拜訪傳統長老與會所</div>
+          <div class="phrase-en">“We are students from Taiwan learning about Austronesian heritage. May we politely ask about the carvings on the Bai?”</div>
+          <div class="phrase-zh">「我們是來自台灣學習南島文化的學生。請問我們能有禮貌地向您請教男人會館（Bai）上的圖騰故事嗎？」</div>
+          <span class="phrase-note">💡 明確自我身分，表達平視學習之誠意</span>
+        </div>
+
+        <div class="phrase-card">
+          <div class="phrase-context">傳統智慧 · Bul 禁漁制度探詢</div>
+          <div class="phrase-en">“How do the traditional Bul practices and modern marine sanctuaries complement each other here?”</div>
+          <div class="phrase-zh">「傳統的 Bul 禁漁規範與現代海洋保護區，在這裡是如何相輔相成的呢？」</div>
+          <span class="phrase-note">💡 連結傳統生態智慧（TEK）與現代治理</span>
+        </div>
+
+        <div class="phrase-card">
+          <div class="phrase-context">尊重倫理 · 拍照前徵詢同意</div>
+          <div class="phrase-en">“May I take a photo of this craftwork for our educational study? We deeply respect your community guidelines.”</div>
+          <div class="phrase-zh">「請問我可以為這件手工藝品拍張照作為教育研究使用嗎？我們非常尊重社區的規範。」</div>
+          <span class="phrase-note">💡 嚴格遵守倫理，若對方猶豫應微笑感謝並優雅退場</span>
+        </div>
+
+        <div class="phrase-card">
+          <div class="phrase-context">危機化解 · 誤觸禁忌時的優雅致歉</div>
+          <div class="phrase-en">“Sulang (Thank you) for letting us know. We sincerely apologize for our misunderstanding and will adjust right away.”</div>
+          <div class="phrase-zh">「感謝您的提醒（Sulang）。我們為理解不周誠摯致歉，並會立刻調整。」</div>
+          <span class="phrase-note">💡 使用帛琉語 Sulang 表達真摯尊重</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">帛琉南島永續實踐計畫</div>
+          <p class="footer-desc">
+            本專案由教育部青年發展署「青年百億海外圓夢基金計畫－海外翱翔組」支持（計畫編號：N-10-3）。旨在鼓勵台灣青年學生走入南島文化圈，透過田野調查、ESG 探索與跨文化對話，落實永續實踐。
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>快速導航</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">計畫主頁</a></li>
+            <li><a href="#methodology">田野方法論</a></li>
+            <li><a href="#itinerary">15天日程與地圖</a></li>
+            <li><a href="#checklist">行前裝備清單</a></li>
+            <li><a href="#budget">預算花費管理</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>永續目標與承諾</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.palaupledge.com/" target="_blank" rel="noopener noreferrer">帛琉誓詞 Palau Pledge ↗</a></li>
+            <li><a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">聯合國 SDGs 目標 ↗</a></li>
+            <li><a href="https://www.yda.gov.tw/" target="_blank" rel="noopener noreferrer">教育部青年發展署 ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 帛琉南島永續實踐計畫 · 青年百億海外圓夢基金計畫 海外翱翔組 N-10-3</div>
+        <div>設計面向：大專院校青年學生海外探索、永續發展與跨文化交流</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Element -->
+  <div class="toast" id="toastMessage">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toastText">訊息已更新</span>
+  </div>
+
+  <!-- JavaScript Code -->
+  <script>
+    /* ==========================================================================
+       DATA DEFINITIONS
+       ========================================================================== */
+    const ITINERARY_DATA = [
+      {
+        id: "day-0",
+        type: "training",
+        date: "116/07/14",
+        dayLabel: "培訓日",
+        dayOfWeek: "三",
+        title: "行前培訓：田野調查方法論與跨文化溝通實戰",
+        themeShort: "行前培訓",
+        sdgs: ["SDG 4 優質教育", "ESG 永續路徑", "跨文化互動"],
+        summary: "辦理地點於銘傳大學基河校區 J616 會議室。主軸包含田野調查方法論、ESG永續路徑地圖轉譯法、跨文化現地微訪談技巧，以及部落倫理與危機應變演練。",
+        schedule: [
+          { time: "08:00 - 08:20", text: "報到與領取手冊", desc: "領取培訓講義、田野速記本與分組識別。" },
+          { time: "08:20 - 09:20", text: "Icebreaker 破冰與自我介紹", desc: "30秒自我介紹、參與動機與個人專長分享，建立團隊氛圍與溝通公約。" },
+          { time: "09:20 - 09:50", text: "團隊組成與角色卡抽選", desc: "分組確認責任鏈：隊長、觀察員、文化記錄、影像控管相互支援機制。" },
+          { time: "10:00 - 11:30", text: "如何將生硬 ESG 轉化為「田野線索」", desc: "E(環境)觀察法：海洋與森林示範區減塑、低碳、防曬乳禁令；S(社會)觀察法：Bai傳統會所維護、導覽員組成與部落主體性；G(治理)觀察法：帛琉宣言與傳統 Bul 禁漁制度。" },
+          { time: "11:30 - 12:30", text: "田野紀錄實作：五感永續地圖", desc: "發放「永續路徑筆記本」，指導學生如何記錄看見、聽見、體驗到的五感 ESG。" },
+          { time: "13:30 - 14:30", text: "文化轉譯說故事—質性資料感性重塑", desc: "Photo-Elicitation 影像導引法、故事架構法 Storytelling、拒絕獵奇視角，以南島同族平等平視心態記錄。" },
+          { time: "14:30 - 15:50", text: "南島共鳴—現地微訪談技巧與英文句型包", desc: "以「聊天」代替問卷，練習 5-10 分鐘微訪談，提供實用日常田野英文破冰句型包降低焦慮。" },
+          { time: "16:00 - 17:00", text: "尊重在地—部落倫理、禁忌與情境沙盒演練", desc: "母系社會權力結構、男人會館參觀規範、拜訪首領長老禮儀、現地溝通危機退場機制演練。" },
+          { time: "17:00 - 17:30", text: "自評問卷前測與行前行政宣導", desc: "填寫跨文化適應力前測問卷、護照、行李、網卡與緊急聯絡宣導。" }
+        ],
+        spots: [
+          {
+            name: "銘傳大學基河校區 (J616 會議室)",
+            area: "台北市士林區基河路130號",
+            mapsQuery: "銘傳大學基河校區",
+            desc: "行前密集培訓核心基地，進行田野情境模擬與裝備安全檢查。",
+            esg: "G 治理準備：確認團隊公約與南島文化尊重原則"
+          }
+        ],
+        interviewTip: "練習 30 秒英語自我介紹，清楚說明來自台灣、前來學習南島永續智慧的謙虛動機。",
+        ethicsAlert: "牢記：進入部落前先問規矩，面對長老不可直視挑釁或隨意打斷發言。"
+      },
+      {
+        id: "day-1",
+        type: "travel",
+        date: "116/07/29",
+        dayLabel: "Day 1",
+        dayOfWeek: "二",
+        title: "啟程啟航：抵達帛琉、環境熟悉與共同公約座談",
+        themeShort: "啟程座談",
+        sdgs: ["SDG 17 全球夥伴", "入境承諾"],
+        summary: "由桃園國際機場搭機前往帛琉，完成入境檢驗、簽署「帛琉宣言（Palau Pledge）」印章、住宿安頓與團隊共同公約共識座談會。",
+        schedule: [
+          { time: "上午/下午", text: "桃園國際機場 (TPE) 集合出發", desc: "團隊裝備統整、證件防曬品最後檢查，搭機直飛帛琉羅曼·盟圖爾國際機場。" },
+          { time: "抵達帛琉", text: "入境通關與簽署帛琉宣言", desc: "海關在護照蓋上世界知名的「帛琉誓詞」章，青年親筆簽名承諾守護島嶼。" },
+          { time: "晚間", text: "團隊行程說明與公約共識座談會", desc: "確認各角色每日工作流，宣導低碳生活守則與飲用水自備規定。" }
+        ],
+        spots: [
+          {
+            name: "桃園國際機場 (TPE)",
+            area: "台灣桃園",
+            mapsQuery: "桃園國際機場",
+            desc: "海外翱翔計畫啟程起點。",
+            esg: "G 治理：落實團隊出境紀律與保險行前通報"
+          },
+          {
+            name: "帛琉羅曼·盟圖爾國際機場 (ROR)",
+            area: "帛琉巴貝爾圖阿普島 (Airai)",
+            mapsQuery: "Palau International Airport",
+            desc: "帛琉唯一國際門戶，通關時護照簽名蓋印 Palau Pledge。",
+            esg: "G 治理：國家級生態誓詞入境制度典範"
+          }
+        ],
+        interviewTip: "微觀察：觀察機場通關處的標語與旅客簽名反應，記錄第一筆田野觀察筆記。",
+        ethicsAlert: "帛琉禁止攜帶含有 Oxybenzone 及 Octinoxate 等化學成分的防曬乳，違者海關將沒收並可能面臨罰款。"
+      },
+      {
+        id: "day-2",
+        type: "sdg14",
+        date: "116/07/30",
+        dayLabel: "Day 2",
+        dayOfWeek: "三",
+        title: "帛琉永續海洋生態體察 I：洛克群島海域探勘",
+        themeShort: "洛克海域 I",
+        sdgs: ["SDG 14 海洋生態"],
+        summary: "搭乘合法生態船前往世界遺產洛克群島南方潟湖海域探勘，聆聽在地原民嚮導介紹珊瑚礁生態系與傳統海洋共生智慧。",
+        schedule: [
+          { time: "08:30 - 12:00", text: "洛克群島南方潟湖探勘", desc: "乘船考察蕈狀石灰岩島嶼地形、珊瑚礁生長狀況與海洋巡護員執法站。" },
+          { time: "12:00 - 13:30", text: "無痕海島低碳午餐", desc: "實踐自備環保餐具與保溫水瓶，無塑餐盒示範。" },
+          { time: "13:30 - 16:30", text: "海洋人文與浮潛實地體察", desc: "穿戴水母衣（物理防曬）實地觀察海洋生物多樣性，由原民導覽員解說禁漁區邊界標識。" }
+        ],
+        spots: [
+          {
+            name: "洛克群島南方潟湖 (Rock Islands Southern Lagoon)",
+            area: "柯羅州 Koror",
+            mapsQuery: "Rock Islands Southern Lagoon Palau",
+            desc: "聯合國教科文組織世界複合遺產，擁有445座無人蕈狀石灰岩島嶼與豐富海洋生物。",
+            esg: "E 環境：嚴格實施出海許可證（Rock Islands Permit）以價制量與生態保育"
+          }
+        ],
+        interviewTip: "訪談船長或原民導覽員：「在您成長過程中，這片海域的珊瑚與魚群數量有哪些變化？」",
+        ethicsAlert: "嚴禁觸碰、站立於珊瑚上，嚴禁撿拾貝殼或砂石帶離海島。"
+      },
+      {
+        id: "day-3",
+        type: "sdg14",
+        date: "116/07/31",
+        dayLabel: "Day 3",
+        dayOfWeek: "四",
+        title: "帛琉永續復育實際體察 II：硨磲海域野放復育行動",
+        themeShort: "硨磲復育 II",
+        sdgs: ["SDG 14 海洋生態"],
+        summary: "深入洛克群島硨磲海域，親身參與硨磲貝野放與復育監測行動，記錄南島海洋生態復育工程。",
+        schedule: [
+          { time: "09:00 - 11:30", text: "硨磲海域復育基地考察", desc: "觀察野生巨蚌（Giant Clam）在潮間帶與潟湖生態鏈中的造礁與濾水關鍵功能。" },
+          { time: "11:30 - 14:00", text: "野放復育實作與監測", desc: "在保育專員指導下參與人工培育硨磲貝之野放定位與生長環境記錄。" },
+          { time: "14:30 - 17:00", text: "影像導引法 (Photo-Elicitation) 實作", desc: "以鏡頭捕捉復育員雙手固定貝苗的瞬間，採集質性敘事元素。" }
+        ],
+        spots: [
+          {
+            name: "硨磲海域保護區 (Giant Clam Sanctuary)",
+            area: "洛克群島保護區",
+            mapsQuery: "Giant Clam Sanctuary Palau",
+            desc: "保育百年巨型硨磲貝的天然棲息地，水下景致壯觀，是生態修復的重要基地。",
+            esg: "E 環境：瀕危物種人工繁殖與野外回放工程典範"
+          }
+        ],
+        interviewTip: "詢問復育專員：「氣候變遷海水暖化，對硨磲貝幼苗存活率帶來最大的挑戰是什麼？」",
+        ethicsAlert: "浮潛觀察硨磲貝時保持至少一公尺安全距離，勿將手伸入貝口內部。"
+      },
+      {
+        id: "day-4",
+        type: "sdg11",
+        date: "116/08/01",
+        dayLabel: "Day 4",
+        dayOfWeek: "五",
+        title: "原民部落人文踏查 I：生活與農魚產業升級、邦交合作交流",
+        themeShort: "農魚與邦交",
+        sdgs: ["SDG 2 零飢餓", "SDG 14 海洋生態", "SDG 17 夥伴關係"],
+        summary: "清晨觀察當地早市市場經濟運作，隨後參訪台灣國合會（ICDF）駐帛琉農技團畜牧中心與水產養殖所（PMDC）硨磲貝復育中心。",
+        schedule: [
+          { time: "06:30 - 08:30", text: "當地早市市場經濟運作觀察", desc: "考察在地農漁民直接交易模式、芋頭（Taro）等主食作物產銷結構。" },
+          { time: "09:30 - 12:00", text: "邦交交流：國合會技術團－畜牧示範中心", desc: "拜訪台灣技術團，了解台帛農業合作、土壤改良與糧食自給率提升方案。" },
+          { time: "13:30 - 16:30", text: "國合會水產養殖所－硨磲貝復育中心 (PMDC)", desc: "考察水產養殖所的大型培育池，了解台帛海洋科研與貝苗贈予南島各州共治之成果。" }
+        ],
+        spots: [
+          {
+            name: "國合會駐帛琉技術團 (Taiwan Technical Mission)",
+            area: "巴貝爾圖阿普島 (大島)",
+            mapsQuery: "Taiwan Technical Mission in Palau",
+            desc: "中華民國（台灣）與帛琉邦交重要支柱，推動園藝蔬果與畜牧現代化示範。",
+            esg: "S 社會 & G 治理：台帛雙邊技術援助與 SDG 2 糧食自給目標"
+          },
+          {
+            name: "帛琉水產養殖展示中心 (PMDC)",
+            area: "Malakal, Koror",
+            mapsQuery: "Palau Mariculture Demonstration Center",
+            desc: "太平洋首屈一指的巨蚌人工孵化與珊瑚科研機構，長年受台灣國合會專業支援。",
+            esg: "E 環境：全球巨型硨磲貝繁育技術發源地"
+          }
+        ],
+        interviewTip: "向台灣派駐技術專家提問：「台灣農業與水產科技如何在地化，並尊重帛琉傳統飲食文化？」",
+        ethicsAlert: "尊重早市攤商，拍攝人物面部或貨品前務必點頭微笑詢問同意。"
+      },
+      {
+        id: "day-5",
+        type: "sdg11",
+        date: "116/08/02",
+        dayLabel: "Day 5",
+        dayOfWeek: "六",
+        title: "原民部落人文踏查 II：原民部落文化、艾萊州文化之旅",
+        themeShort: "艾萊州文化",
+        sdgs: ["SDG 11 永續城市與社區"],
+        summary: "參訪貝勞國家博物館與艾萊州（Airai）文化之旅：走訪具有數百年歷史的男人會館（Bai）、戰船古蹟與古老部落巡禮。",
+        schedule: [
+          { time: "09:00 - 11:30", text: "貝勞國家博物館 (Belau National Museum)", desc: "透過館藏石器、貝幣（Palauan Money）深入南島母系氏族社會歷史脈絡。" },
+          { time: "13:00 - 16:30", text: "艾萊州百年男人會館 (Airai Bai) 與戰船巡禮", desc: "拜訪太平洋保存最完好的傳統大木屋會所，傾聽長老解說樑柱八卦圖騰與部落共治歷史。" },
+          { time: "16:30 - 17:30", text: "古老部落石階步道生態巡禮", desc: "踏查古代部落交通要道，觀察古代防禦工法與自然林相融合之道。" }
+        ],
+        spots: [
+          {
+            name: "艾萊州百年男人會館 (Airai Bai)",
+            area: "Airai State",
+            mapsQuery: "Airai Bai Palau",
+            desc: "建於約1890年，高聳三角形斜屋頂無鉚釘純木結構，是帛琉最神聖的部族會議中心。",
+            esg: "S 社會：母系社會中男性首領共治議事之象徵，部落認同基石"
+          },
+          {
+            name: "貝勞國家博物館 (Belau National Museum)",
+            area: "Koror",
+            mapsQuery: "Belau National Museum",
+            desc: "密克羅尼西亞歷史最悠久的博物館，戶外重現完整傳統草頂 Bai 會所。",
+            esg: "S 社會：南島文化語言資產典藏與跨世代教育"
+          }
+        ],
+        interviewTip: "詢問導覽員：「在現代民主體制下，傳統 Bai 會館長老如何與州政府或國會協調政策？」",
+        ethicsAlert: "進入 Bai 會所務必穿著遮過膝蓋之長褲或長裙，女性請遵守現場嚮導之動線引導，禁止喧嘩或踩踏神聖主樑。"
+      },
+      {
+        id: "day-6",
+        type: "sdg12",
+        date: "116/08/03",
+        dayLabel: "Day 6",
+        dayOfWeek: "日",
+        title: "原民部落人文踏查 III：永續產業、小農農場與綠色飯店",
+        themeShort: "永續產業",
+        sdgs: ["SDG 12 責任消費與生產"],
+        summary: "實地踏訪在地小農永續有機農場、體驗由產地到餐桌的永續餐廳，並參訪推行全面低碳節能的 PALAU HOTEL 永續飯店。",
+        schedule: [
+          { time: "09:00 - 12:00", text: "在地小農永續有機農場踏查", desc: "觀察海島循環堆肥、傳統農耕間作技術與雨水回收系統。" },
+          { time: "12:00 - 13:30", text: "產地到餐桌永續低碳午餐", desc: "品嚐在地木薯、芋頭與在地非瀕危近海魚料理，探討島嶼食物里程。" },
+          { time: "14:00 - 16:30", text: "參訪永續飯店 PALAU HOTEL", desc: "考察綠色住宿節能減碳、客房無一次性塑料、水資源回收與在地員工培育制度。" }
+        ],
+        spots: [
+          {
+            name: "帕勞大飯店 (Palau Hotel)",
+            area: "市中心 Koror",
+            mapsQuery: "Palau Hotel Koror",
+            desc: "帛琉市中心率先推行無塑化、減廢倡議與支持在地採購的綠色標竿旅宿。",
+            esg: "E 環境 & S 社會：負責任採購與飯店營運端落實永續承諾"
+          }
+        ],
+        interviewTip: "向永續飯店經理提問：「推動無塑客房時，國際旅客最初的接受度如何？你們如何透過溝通達成理解？」",
+        ethicsAlert: "支持當地小農產品，消費時自備購物袋，拒絕任何一次性塑料袋包裝。"
+      },
+      {
+        id: "day-7",
+        type: "sdg15",
+        date: "116/08/04",
+        dayLabel: "Day 7",
+        dayOfWeek: "一",
+        title: "原民部落人文踏查 IV：觀光產業、巴貝大島天使大瀑布",
+        themeShort: "陸域大瀑布",
+        sdgs: ["SDG 15 陸域生態"],
+        summary: "深入帛琉最大島巴貝爾圖阿普島（大島），健行考察安得貌天使大瀑布（Ngardmau Waterfall）陸域森林生態與當地私人原民文物館。",
+        schedule: [
+          { time: "08:30 - 12:30", text: "安得貌天使大瀑布健行生態踏查", desc: "穿越熱帶雨林與紅樹林支流，考察陸域森林水土保持、林冠層生物與生態步道維護機制。" },
+          { time: "12:30 - 13:30", text: "山林野溪生態野餐", desc: "實踐無痕山林（LNT）原則，所有垃圾與果皮全數裝入密封袋攜回。" },
+          { time: "14:00 - 16:30", text: "參訪帛琉私人文物博物館", desc: "走訪在地家族私人收藏館，聆聽耆老口述神話與家族土地守護故事。" }
+        ],
+        spots: [
+          {
+            name: "安得貌天使大瀑布 (Ngardmau Waterfall)",
+            area: "Ngardmau State, Babeldaob",
+            mapsQuery: "Ngardmau Waterfall Palau",
+            desc: "帛琉最高、水量最澎湃的壯麗瀑布，坐落於茂密原始熱帶雨林深處。",
+            esg: "E 環境：海島珍貴淡水水源涵養林保護與低衝擊林道示範"
+          }
+        ],
+        interviewTip: "詢問步道保育員：「觀光單軌車與徒步道興建時，如何盡可能避免砍伐原生樹木與驚擾鳥類？」",
+        ethicsAlert: "雨林步道濕滑，務必穿著防滑溯溪鞋；不攀折花木，不在溪流中洗滌帶有化學成分的物品。"
+      },
+      {
+        id: "day-8",
+        type: "sdg12",
+        date: "116/08/05",
+        dayLabel: "Day 8",
+        dayOfWeek: "二",
+        title: "原民部落人文踏查 V：產銷物流、魚市場與大型超市經濟",
+        themeShort: "魚市與商超",
+        sdgs: ["SDG 12 責任消費與生產"],
+        summary: "深入調研當地魚市場晨間拍賣運作，隨後參訪帛琉最大商超 Surangel's Supercenter 與第二大商超 WCTC，調研島嶼進口物資與物價衝擊。",
+        schedule: [
+          { time: "07:00 - 09:30", text: "當地魚市場經濟運作微觀察", desc: "記錄近海捕撈魚種、合法捕撈尺寸檢驗、價格波動與漁民生計。" },
+          { time: "10:30 - 13:00", text: "參訪最大商超 Surangel's Supercenter-Airai", desc: "調研進口食品依賴度、綠色友善商品專區、自備購物袋折扣政策實施現況。" },
+          { time: "14:00 - 16:30", text: "參訪第二大商超 WCTC Shopping Center", desc: "比對兩大商超之原民文創展售區、環保認證日用品與塑膠包裝減量進程。" }
+        ],
+        spots: [
+          {
+            name: "柯羅魚市場 (Koror Fish Market)",
+            area: "Koror Harbor",
+            mapsQuery: "Fish Market Koror Palau",
+            desc: "了解帛琉在地漁業交易的核心港口，嚴格執行瀕危魚類禁捕稽查。",
+            esg: "G 治理：落實禁捕魚種清單與尺寸限制之執法前線"
+          },
+          {
+            name: "蘇朗戈購物中心 (Surangel's Supercenter - Airai)",
+            area: "Airai State",
+            mapsQuery: "Surangels Supercenter Airai Palau",
+            desc: "帛琉規模最大、設備最新穎的綜合商場，是海島物流樞紐象徵。",
+            esg: "E 環境：冷鏈節能工法與環保產品陳列觀察"
+          },
+          {
+            name: "WCTC 購物中心 (WCTC Shopping Center)",
+            area: "Koror Downtown",
+            mapsQuery: "WCTC Shopping Center Palau",
+            desc: "帛琉歷史悠久的市中心最大百貨商場，是在地居民採買中心。",
+            esg: "SDG 12：島嶼輸入型經濟與原生物產價格機制比對"
+          }
+        ],
+        interviewTip: "與商超收銀員或經理微訪談：「自從推行減塑後，在地居民自備環保袋的比例大概有多少？」",
+        ethicsAlert: "商場調研請低調拍照記錄價格與標籤，避免阻礙通道或干擾顧客正常購物流程。"
+      },
+      {
+        id: "day-9",
+        type: "sdg14",
+        date: "116/08/06",
+        dayLabel: "Day 9",
+        dayOfWeek: "三",
+        title: "帛琉海域周邊人文生態體察 I：洛克群島探勘與 BUL 垂釣文化",
+        themeShort: "BUL 垂釣文化",
+        sdgs: ["SDG 14 海洋生態"],
+        summary: "出海深入洛克群島邊陲海域，由資深原民漁夫親授傳統手線垂釣技巧，親身體會古老 BUL 禁漁制度下的取之有度精神。",
+        schedule: [
+          { time: "08:30 - 12:00", text: "洛克群島外圍海域生態探勘", desc: "觀察珊瑚白化監測點、深海與潟湖交界之洋流變化及魚群聚集帶。" },
+          { time: "12:00 - 13:00", text: "船上午餐與傳統南島航海故事", desc: "耆老分享星盤引航與候鳥辨位傳統技術。" },
+          { time: "13:00 - 16:30", text: "傳統 BUL 垂釣文化實踐體驗", desc: "使用純手線與環保圓形魚鉤，只捕撈當餐食用之成魚，未達尺寸幼魚一律溫柔放生。" }
+        ],
+        spots: [
+          {
+            name: "洛克群島外圍海域與傳統漁場",
+            area: "Koror State Southern Waters",
+            mapsQuery: "Rock Islands Southern Lagoon Palau",
+            desc: "世代原民實踐傳統禁漁規範（BUL）的天然海洋試驗場。",
+            esg: "G 治理：傳統 BUL 制度：酋長宣佈禁漁期讓海洋生物繁衍休養的自治典範"
+          }
+        ],
+        interviewTip: "向老漁夫請益：「當酋長頒布 BUL 禁漁令時，部落青年如何自發遵守這項約定？」",
+        ethicsAlert: "釣獲懷卵母魚或未達標小魚時，須依南島古老智慧以濕潤雙手迅速除鉤放回大海。"
+      },
+      {
+        id: "day-10",
+        type: "sdg14",
+        date: "116/08/07",
+        dayLabel: "Day 10",
+        dayOfWeek: "四",
+        title: "帛琉海域人文生態體察 II：石錢島、無動力方舟與藍碳紅樹林",
+        themeShort: "藍碳與石錢",
+        sdgs: ["SDG 14 海洋生態", "SDG 15 陸域生態"],
+        summary: "探勘石錢採集歷史遺址，搭乘無動力方舟深入藍碳紅樹林，考察二戰歷史遺跡並進行深入的社區訪談與質性資料補充。",
+        schedule: [
+          { time: "08:30 - 11:30", text: "無動力方舟深入藍碳紅樹林秘境", desc: "以最低碳足跡的獨木舟深入紅樹林水道，測量潮間帶固碳泥炭層與紅樹林氣根生態。" },
+          { time: "11:30 - 13:30", text: "石錢島登島生態探索與歷史遺跡", desc: "探尋古代雅浦島人遠航至此開鑿巨大「石錢（Rai Stones）」採石場遺址與二戰遺跡防空壕。" },
+          { time: "14:00 - 17:00", text: "沿岸社區訪談與質性資料補充", desc: "走訪鄰近漁村長老與婦女手工編織工坊，記錄紅樹林染料與纖維利用。" }
+        ],
+        spots: [
+          {
+            name: "尼可灣藍碳紅樹林生態區 (Nikko Bay)",
+            area: "Nikko Bay, Koror",
+            mapsQuery: "Nikko Bay Palau",
+            desc: "平靜如鏡的內海潟湖，被茂密紅樹林環繞，具有全球極高單位的「藍碳」固碳價值。",
+            esg: "E 環境：抵禦極端氣候風暴與藍碳儲存的重要生態屏障"
+          },
+          {
+            name: "雅浦石錢採石場古蹟 (Stone Money Quarry)",
+            area: "Airai / Koror 歷史遺址",
+            mapsQuery: "Palau Giant Clam Sanctuary",
+            desc: "太平洋南島民族歷史上最具震撼力的原始貨幣開採地，展現高超航海與信用制度。",
+            esg: "S 社會：跨島航海貿易與南島傳統信用體系活化石"
+          }
+        ],
+        interviewTip: "訪談社區耆老：「紅樹林的砍伐禁令如何保障了村落避免強烈颱風暴潮的侵襲？」",
+        ethicsAlert: "無動力划行時注意船槳不可刮傷紅樹林氣根，歷史遺跡請勿攀爬坐臥。"
+      },
+      {
+        id: "day-11",
+        type: "sdg12",
+        date: "116/08/08",
+        dayLabel: "Day 11",
+        dayOfWeek: "五",
+        title: "帛琉文創工藝與原民經濟分配體察：ECO GLASS FACTORY 琉璃工廠",
+        themeShort: "琉璃工藝",
+        sdgs: ["SDG 12 責任消費與生產"],
+        summary: "參訪將觀光廢棄玻璃瓶轉化為高質感藝術品的 ECO GLASS FACTORY 琉璃工廠，探討原民手作技藝與海島循環經濟收益分配模式。",
+        schedule: [
+          { time: "09:00 - 12:00", text: "參訪 ECO GLASS FACTORY 玻璃工坊", desc: "實地考察島上回收啤酒瓶、烈酒瓶熔鑄再生流程，見證垃圾變藝術品的綠色奇蹟。" },
+          { time: "12:00 - 13:30", text: "文創園區交流午餐", desc: "與工坊在地年輕玻璃吹製師共進午餐，探討海島青年就業與手藝傳承。" },
+          { time: "14:00 - 16:30", text: "原民文創經濟分配與定價機制研習", desc: "分析文創收益如何回饋在地身心障礙中心與海洋巡護基金，落實社會企業責任。" }
+        ],
+        spots: [
+          {
+            name: "帛琉生態琉璃工坊 (Belau Eco Glass Factory)",
+            area: "Malakal, Koror",
+            mapsQuery: "Belau Eco Glass Koror Palau",
+            desc: "利用海島觀光廢棄廢玻璃重新吹製成精緻南島海洋圖騰紀念品，是循環經濟典範。",
+            esg: "SDG 12 責任生產：100% 廢棄物升級再造（Upcycling）與社會共融"
+          }
+        ],
+        interviewTip: "詢問青年玻璃工藝師：「從事廢玻璃再造藝術，如何改變你對海島觀光垃圾的看法？」",
+        ethicsAlert: "吹玻璃作業區高溫，參訪時嚴格佩戴護目鏡並跟隨技師指引，切勿觸碰剛脫模之玻璃成品。"
+      },
+      {
+        id: "day-12",
+        type: "sdg11",
+        date: "116/08/09",
+        dayLabel: "Day 12",
+        dayOfWeek: "六",
+        title: "永續城市與政治制度體察：泛太平洋度假村生態園區、參訪臺灣大使館",
+        themeShort: "外交與園區",
+        sdgs: ["SDG 11 永續城市與社區", "SDG 17 全球夥伴"],
+        summary: "考察泛太平洋度假村（Palau Pacific Resort）永續生態園區水環境管理，午後前往中華民國駐帛琉共和國大使館參訪座談。",
+        schedule: [
+          { time: "09:00 - 12:00", text: "泛太平洋度假村 (PPR) 永續生態園區建立考察", desc: "考察大型海濱度假村之中水雨水回收、原生紅樹林走廊保留與海龜產卵沙灘保護措施。" },
+          { time: "12:00 - 13:30", text: "生態園區低碳午間座談", desc: "探討高階生態觀光與一般大眾旅遊在資源消耗上的結構性差異。" },
+          { time: "14:00 - 16:30", text: "參訪中華民國駐帛琉共和國大使館", desc: "與外交使節及在帛僑民座談，深入了解台帛在氣候變遷公約、醫療包機與南島文化交流外交成果。" }
+        ],
+        spots: [
+          {
+            name: "帛琉泛太平洋度假村 (Palau Pacific Resort)",
+            area: "Arakabesang, Koror",
+            mapsQuery: "Palau Pacific Resort",
+            desc: "坐落於阿魯卡貝桑島，是帛琉最高規格且致力於原生海濱生態修復之度假標竿。",
+            esg: "E 環境 & SDG 11：商業度假村與海龜棲地保育共存機制"
+          },
+          {
+            name: "中華民國駐帛琉共和國大使館",
+            area: "Palasia Hotel Building / Koror",
+            mapsQuery: "Embassy of Taiwan Palau",
+            desc: "台灣在南太平洋堅定的邦交外交陣地，推動台帛原住民族跨文化互訪之樞紐。",
+            esg: "G 治理 & SDG 17：國際氣候正義倡議與邦交永續夥伴發展"
+          }
+        ],
+        interviewTip: "請教外交使節：「台灣青年在南島外交與國際永續舞台上，能扮演怎樣更積極的柔性角色？」",
+        ethicsAlert: "進入大使館請穿著正式得體服裝（襯衫長褲），關閉手機靜音，遵守外交會面禮儀。"
+      },
+      {
+        id: "day-13",
+        type: "sdg15",
+        date: "116/08/10",
+        dayLabel: "Day 13",
+        dayOfWeek: "日",
+        title: "永續生態田野調查：帛琉特有種鳥類與雨林生態解析",
+        themeShort: "特有種鳥類",
+        sdgs: ["SDG 15 陸域生態"],
+        summary: "深入原始次生林與島嶼保護區，針對帛琉特有種鳥類（如帛琉扇尾鶲、帛琉果鳩等）展開生態行為調查與環境棲地評估。",
+        schedule: [
+          { time: "06:00 - 09:30", text: "清晨熱帶鳥類鳴聲觀測與影像記錄", desc: "於鳥類活躍時段展開望遠鏡觀察，記錄帛琉國鳥（Palau Fruit Dove）與特有種鳥類活動習性。" },
+          { time: "10:30 - 12:30", text: "外來種入侵對特有鳥種棲地之衝擊解析", desc: "與在地森林保育員探討外來鳳頭鸚鵡與鼠類對本土原生鳥巢的危害控制方案。" },
+          { time: "14:00 - 16:30", text: "田野資料彙整與鳥類生態手繪筆記", desc: "於自然保護區工作站整理五感速記筆記，繪製生態棲地食物網草圖。" }
+        ],
+        spots: [
+          {
+            name: "巴貝爾圖阿普島中央森林保護區",
+            area: "Babeldaob Island Central Ridge",
+            mapsQuery: "Ngardmau Waterfall Palau",
+            desc: "密克羅尼西亞生物多樣性最豐富的陸域核心區，是珍貴特有鳥類庇護所。",
+            esg: "E 環境：SDG 15 陸域生態系統保護與外來種防治"
+          }
+        ],
+        interviewTip: "向森林研究員提問：「氣候變遷引發的極端乾旱或暴雨，對特有種鳥類的繁育季節有何具體影響？」",
+        ethicsAlert: "賞鳥時保持安靜，嚴禁使用強力閃光燈或播放鳥鳴錄音引誘鳥類，避免干擾繁殖。"
+      },
+      {
+        id: "day-14",
+        type: "sdg4",
+        date: "116/08/11",
+        dayLabel: "Day 14",
+        dayOfWeek: "一",
+        title: "田野觀察、微訪談綜整與質性補充訪談",
+        themeShort: "資料綜整",
+        sdgs: ["SDG 4 優質教育"],
+        summary: "團隊進行田野資料交叉比對、微訪談逐字速記梳理、挑選關鍵照片進行 Photo-Elicitation 質性解碼，並對遺漏細節展開補充微訪談。",
+        schedule: [
+          { time: "09:00 - 12:00", text: "分組質性資料梳理與故事線重塑", desc: "隊長、觀察員、文化記錄、影像控管共同拼貼「五感永續地圖」，提煉南島低碳故事核心。" },
+          { time: "13:30 - 15:30", text: "針對關鍵受訪者展開微補充訪談", desc: "重返重要社區長老與小農店家，核對訪談事實與地名拼音，贈送感謝紀念卡。" },
+          { time: "16:00 - 18:00", text: "全團隊綜合預演與回饋反思", desc: "演練隔日 SEG 綜合座談會之青年發表簡報，反思文化衝擊與同族視角收穫。" }
+        ],
+        spots: [
+          {
+            name: "柯羅市中心文化工作坊中心",
+            area: "Koror Downtown",
+            mapsQuery: "Palau Hotel Koror",
+            desc: "團隊田野分析與跨組資料整合的工作討論基地。",
+            esg: "SDG 4：同儕互評與文化轉譯實踐反思"
+          }
+        ],
+        interviewTip: "補充訪談：「在我們回台灣分享帛琉故事時，您最希望台灣大學生了解帛琉的哪一項傳統智慧？」",
+        ethicsAlert: "再次向所有受訪者確認照片與語音紀錄是否可用於教育推廣成果發表，落實知情同意。"
+      },
+      {
+        id: "day-15",
+        type: "sdg4",
+        date: "116/08/12",
+        dayLabel: "Day 15",
+        dayOfWeek: "二",
+        title: "帛琉永續 SEG 綜合座談會、跨文化自評後測、返程歸國",
+        themeShort: "座談與返程",
+        sdgs: ["SDG 4 優質教育", "跨文化適應力後測"],
+        summary: "舉辦帛琉永續 SEG 綜合座談會與回饋交流，完成跨文化適應力與環境素養自評後測問卷。前往帛琉機場搭機返回桃園國際機場。",
+        schedule: [
+          { time: "09:00 - 11:30", text: "帛琉永續 SEG 綜合座談會與成果交流", desc: "邀請在地合作單位、導覽員代表與青年學生面對面交流，分享15天田野轉譯發現。" },
+          { time: "11:30 - 12:30", text: "跨文化適應力與環境素養自評量表後測", desc: "填寫結訓問卷，評估自身在文化敏感度、ESG 實踐力與英語田野自信之成長度。" },
+          { time: "下午/晚間", text: "返程準備，由帛琉機場搭機返回台灣", desc: "安檢通關，依依不捨告別彩虹故鄉帛琉，攜帶滿滿南島故事賦歸桃園國際機場。" }
+        ],
+        spots: [
+          {
+            name: "帛琉羅曼·盟圖爾國際機場 (ROR)",
+            area: "Airai State",
+            mapsQuery: "Palau International Airport",
+            desc: "實踐海外圓夢承諾後的賦歸起飛點。",
+            esg: "G 治理：落實離境環境稅捐與無痕行李檢驗"
+          },
+          {
+            name: "桃園國際機場 (TPE)",
+            area: "台灣桃園",
+            mapsQuery: "桃園國際機場",
+            desc: "回到台灣，開啟下一階段校園南島文化推廣與永續成果擴散。",
+            esg: "SDG 4：青年行動成果返國深耕與社會回饋"
+          }
+        ],
+        interviewTip: "在座談會上真摯分享：「帛琉教會我們最深刻的一課：保護海洋不是放棄繁榮，而是為後代留下選擇。」",
+        ethicsAlert: "檢查行李：嚴禁攜帶任何貝殼、珊瑚骨骼、砂石等自然物離境，落實帛琉誓詞的最後承諾。"
+      }
+    ];
+
+    /* ==========================================================================
+       CHECKLIST DATA & STORAGE
+       ========================================================================== */
+    const DEFAULT_CHECKLIST = [
+      { id: "c1", cat: "doc", text: "中華民國護照正本（有效效期6個月以上，免簽證停留30天）", sub: "行前務必檢查照片頁與有效日期，影本分開備存", done: true },
+      { id: "c2", cat: "doc", text: "電子來回機票確認單列印本與離境證明文件", sub: "入出境審查必備，存手機 PDF 並列印紙本備查", done: true },
+      { id: "c3", cat: "doc", text: "教育部青年發展署海外圓夢基金錄取證明及學生證", sub: "國際學生身分查驗與補助核銷憑證", done: false },
+      { id: "c4", cat: "doc", text: "海外突發疾病、意外傷害與緊急醫療後送保險單", sub: "海島活動醫療成本高昂，務必投保足額險種", done: true },
+      { id: "c5", cat: "eco", text: "海洋友善珊瑚安全防曬乳（無 Oxybenzone 禁生成分）", sub: "帛琉法律嚴格禁止10種有害珊瑚化學防曬乳，違者重罰 $1,000 美金！", done: false },
+      { id: "c6", cat: "eco", text: "雙層不鏽鋼保溫水瓶（至少 800ml）", sub: "帛琉嚴格執行全面減塑，各住宿與景點皆備有飲水機，拒買瓶裝水", done: true },
+      { id: "c7", cat: "eco", text: "長袖兩件式水母衣 / 防磨衣（Rash Guard）", sub: "最佳物理防曬，避免浮潛時曬傷及珊瑚劃傷，減少防曬乳使用", done: false },
+      { id: "c8", cat: "eco", text: "膠底防滑防割浮潛溯溪鞋", sub: "保護雙腳不踩踏珊瑚，進出潮間帶與天使瀑布碎石步道必備", done: false },
+      { id: "c9", cat: "eco", text: "個人環保餐具組（環保筷、不銹鋼叉匙、矽膠食物袋）", sub: "外食自備餐具，徹底杜絕外帶一次性塑膠盒與免洗筷", done: true },
+      { id: "c10", cat: "field", text: "專屬「永續路徑筆記本」與防水速記筆", sub: "記錄五感 ESG（看見、聽見、體驗到的真實線索），雨天不易暈開", done: true },
+      { id: "c11", cat: "field", text: "手機高氣囊防水袋 / 防水運動相機", sub: "Photo-Elicitation 影像導引田野法拍攝，隨時捕捉水下與雨林故事", done: false },
+      { id: "c12", cat: "field", text: "微訪談錄音設備 / 降噪語音備忘錄 App", sub: "訪談前務必徵求受訪者口頭同意，5-10分鐘微訪談錄音", done: false },
+      { id: "c13", cat: "field", text: "田野英文日常破冰句型卡（隨身版）", sub: "克服開口焦慮，快速查閱南島禮貌問答與專有名詞", done: true },
+      { id: "c14", cat: "life", text: "參訪男人會館（Bai）端莊服裝（及膝長褲 / 過膝及膝裙）", sub: "尊重南島母系部落性別禁忌與神聖會所參訪禮儀，禁穿過短熱褲", done: false },
+      { id: "c15", cat: "life", text: "美金現金小額紙鈔（$1, $5, $10, $20，準備約 $200-$300）", sub: "早市、小農攤商、小額文化維護捐款與小費使用（帛琉使用美金）", done: false },
+      { id: "c16", cat: "life", text: "個人常備藥品（暈船藥、電解質發泡錠、止痛藥、防蚊液）", sub: "出海跳島風浪大，暈船藥需於上船前半小時服用", done: true },
+      { id: "c17", cat: "life", text: "美標雙孔插頭充電器（與台灣規格相容）與大容量行動電源", sub: "帛琉電壓 110V/60Hz，戶外全天田野手機拍照耗電快", done: true }
+    ];
+
+    /* ==========================================================================
+       BUDGET & EXPENSES DATA & STORAGE
+       ========================================================================== */
+    const DEFAULT_TOTAL_BUDGET = 2500; // USD
+    const DEFAULT_EXPENSES = [
+      { id: "exp-1", date: "2026-07-30", cat: "permit", item: "洛克群島10天期海洋許可證 (Rock Islands Permit)", amount: 50.00, desc: "出海必備環境證" },
+      { id: "exp-2", date: "2026-07-31", cat: "permit", item: "PMDC 水產養殖所硨磲復育門票", amount: 10.00, desc: "支持貝類人工培育" },
+      { id: "exp-3", date: "2026-08-01", cat: "food", item: "早市小農在地傳統芋頭與蔬果品嚐採買", amount: 18.50, desc: "支持在地產銷" },
+      { id: "exp-4", date: "2026-08-02", cat: "permit", item: "艾萊州百年男人會館 (Bai) 文化維護捐款", amount: 15.00, desc: "部落修繕基金" },
+      { id: "exp-5", date: "2026-08-02", cat: "permit", item: "貝勞國家博物館與戶外Bai門票", amount: 10.00, desc: "學生特惠票" },
+      { id: "exp-6", date: "2026-08-04", cat: "permit", item: "巴貝大島天使大瀑布入場及單軌保育維護費", amount: 20.00, desc: "生態步道維護" },
+      { id: "exp-7", date: "2026-08-05", cat: "field", item: "訪談伴手禮（台灣高山烏龍茶包與原民文創小品）", amount: 35.00, desc: "贈予長老與受訪者" },
+      { id: "exp-8", date: "2026-08-08", cat: "misc", item: "ECO GLASS 廢棄玻璃再生紀念海龜琉璃紙鎮", amount: 25.00, desc: "支持海島循環經濟" },
+      { id: "exp-9", date: "2026-07-29", cat: "transport", item: "帛琉當地 4G/LTE 田野通訊上網卡 (15天)", amount: 30.00, desc: "田野打卡與安全通報" }
+    ];
+
+    /* ==========================================================================
+       APP STATE & LOCAL STORAGE
+       ========================================================================== */
+    let currentItineraryFilter = "all";
+    let selectedDayId = "day-0";
+    let currentChecklistCategory = "all";
+
+    // Load or initialize Checklist
+    let checklistItems = [];
+    try {
+      const saved = localStorage.getItem("palau_checklist_v2");
+      checklistItems = saved ? JSON.parse(saved) : DEFAULT_CHECKLIST;
+    } catch (e) {
+      checklistItems = DEFAULT_CHECKLIST;
+    }
+
+    // Load or initialize Expenses
+    let totalBudget = DEFAULT_TOTAL_BUDGET;
+    let expenses = [];
+    let exchangeRate = 32.5;
+
+    try {
+      const savedBudget = localStorage.getItem("palau_budget_v2");
+      if (savedBudget) totalBudget = parseFloat(savedBudget);
+      const savedExpenses = localStorage.getItem("palau_expenses_v2");
+      expenses = savedExpenses ? JSON.parse(savedExpenses) : DEFAULT_EXPENSES;
+      const savedRate = localStorage.getItem("palau_exrate_v2");
+      if (savedRate) exchangeRate = parseFloat(savedRate);
+    } catch (e) {
+      expenses = DEFAULT_EXPENSES;
+    }
+
+    function saveChecklist() {
+      try {
+        localStorage.setItem("palau_checklist_v2", JSON.stringify(checklistItems));
+      } catch (e) {}
+    }
+
+    function saveExpenses() {
+      try {
+        localStorage.setItem("palau_expenses_v2", JSON.stringify(expenses));
+        localStorage.setItem("palau_budget_v2", totalBudget.toString());
+        localStorage.setItem("palau_exrate_v2", exchangeRate.toString());
+      } catch (e) {}
+    }
+
+    /* ==========================================================================
+       UI UTILITIES & NOTIFICATIONS
+       ========================================================================== */
+    function showToast(text) {
+      const toast = document.getElementById("toastMessage");
+      const toastText = document.getElementById("toastText");
+      toastText.innerText = text;
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2600);
+    }
+
+    /* ==========================================================================
+       ITINERARY RENDERING & EVENT HANDLING
+       ========================================================================== */
+    function renderDateScroll() {
+      const container = document.getElementById("dateScroll");
+      container.innerHTML = "";
+
+      const filtered = ITINERARY_DATA.filter(item => {
+        if (currentItineraryFilter === "all") return true;
+        if (currentItineraryFilter === "training") return item.type === "training";
+        if (currentItineraryFilter === "sdg14") return item.sdgs.some(s => s.includes("SDG 14"));
+        if (currentItineraryFilter === "sdg11") return item.sdgs.some(s => s.includes("SDG 11"));
+        if (currentItineraryFilter === "sdg12") return item.sdgs.some(s => s.includes("SDG 12"));
+        if (currentItineraryFilter === "sdg15") return item.sdgs.some(s => s.includes("SDG 15"));
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div style="padding: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">此分類尚無行程。</div>`;
+        return;
+      }
+
+      // If previously selected day is filtered out, select first available
+      if (!filtered.some(d => d.id === selectedDayId)) {
+        selectedDayId = filtered[0].id;
+      }
+
+      filtered.forEach(day => {
+        const btn = document.createElement("button");
+        btn.className = `date-btn ${day.id === selectedDayId ? 'active' : ''}`;
+        btn.innerHTML = `
+          <span class="d-day">${day.dayLabel} (${day.dayOfWeek})</span>
+          <span class="d-date">${day.date.substring(4)}</span>
+          <span class="d-theme" title="${day.themeShort}">${day.themeShort}</span>
+        `;
+        btn.addEventListener("click", () => {
+          selectedDayId = day.id;
+          renderDateScroll();
+          renderItineraryDetail();
+        });
+        container.appendChild(btn);
+      });
+    }
+
+    function renderItineraryDetail() {
+      const display = document.getElementById("itineraryDisplay");
+      const day = ITINERARY_DATA.find(d => d.id === selectedDayId) || ITINERARY_DATA[0];
+
+      const sdgBadges = day.sdgs.map(s => `<span class="sdg-badge">${s}</span>`).join("");
+
+      const scheduleHtml = day.schedule.map(s => `
+        <li class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-time">${s.time}</div>
+          <div class="timeline-text">${s.text}</div>
+          <div class="timeline-desc">${s.desc}</div>
+        </li>
+      `).join("");
+
+      const spotsHtml = day.spots.map(spot => `
+        <div class="spot-box">
+          <div class="spot-header">
+            <div>
+              <div class="spot-name">${spot.name}</div>
+              <div style="font-size: 0.78rem; color: var(--text-light);">${spot.area}</div>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.mapsQuery)}" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="maps-link-btn"
+               title="在 Google Maps 開啟地圖導航">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              Google 地圖
+            </a>
+          </div>
+          <div class="spot-desc">${spot.desc}</div>
+          <div class="spot-esg">${spot.esg}</div>
+        </div>
+      `).join("");
+
+      display.innerHTML = `
+        <div class="itin-header">
+          <div>
+            <span class="itin-date-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line></svg>
+              ${day.date} (${day.dayOfWeek}) · ${day.dayLabel}
+            </span>
+            <h3 class="itin-title">${day.title}</h3>
+          </div>
+          <div class="itin-sdgs">
+            ${sdgBadges}
+          </div>
+        </div>
+        <div class="itin-body">
+          <p style="font-size: 0.98rem; color: var(--text-main); margin-bottom: 1.5rem; line-height: 1.6; background: var(--bg-alt); padding: 1rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent-lagoon);">
+            ${day.summary}
+          </p>
+
+          <div class="itin-grid">
+            <!-- Left: Timeline -->
+            <div>
+              <h4 class="timeline-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                時段與重點行程
+              </h4>
+              <ul class="timeline-list">
+                ${scheduleHtml}
+              </ul>
+            </div>
+
+            <!-- Right: Spots & Fieldwork Tips -->
+            <div>
+              <h4 class="timeline-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                核心地標與 Google Maps 導航
+              </h4>
+              ${spotsHtml}
+
+              <div class="fieldwork-tips">
+                <div class="tips-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                  當日微訪談任務引導
+                </div>
+                <div class="tips-body">${day.interviewTip}</div>
+              </div>
+
+              <div class="fieldwork-tips" style="background: #fef2f2; border-color: #fee2e2; border-left-color: var(--accent-coral); margin-top: 0.75rem;">
+                <div class="tips-title" style="color: #991b1b;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                  文化倫理與禁忌小叮嚀
+                </div>
+                <div class="tips-body" style="color: #7f1d1d;">${day.ethicsAlert}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    /* ==========================================================================
+       CHECKLIST LOGIC & RENDERING
+       ========================================================================== */
+    function getCategoryBadge(cat) {
+      switch(cat) {
+        case 'doc': return '<span class="check-badge badge-doc">行政證件</span>';
+        case 'eco': return '<span class="check-badge badge-eco">海洋永續</span>';
+        case 'field': return '<span class="check-badge badge-field">田野研究</span>';
+        case 'life': return '<span class="check-badge badge-life">生活禮儀</span>';
+        default: return '<span class="check-badge badge-field">自訂項目</span>';
+      }
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById("checkListContainer");
+      container.innerHTML = "";
+
+      const filtered = checklistItems.filter(item => {
+        if (currentChecklistCategory === "all") return true;
+        return item.cat === currentChecklistCategory;
+      });
+
+      const total = checklistItems.length;
+      const completed = checklistItems.filter(i => i.done).length;
+      const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+      document.getElementById("checkedCount").innerText = completed;
+      document.getElementById("totalCount").innerText = total;
+      document.getElementById("progressPercent").innerText = percent + "%";
+      document.getElementById("progressBar").style.width = percent + "%";
+
+      filtered.forEach(item => {
+        const li = document.createElement("li");
+        li.className = `check-item ${item.done ? 'completed' : ''}`;
+        li.innerHTML = `
+          <div class="custom-checkbox">
+            ${item.done ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>' : ''}
+          </div>
+          <div class="check-content">
+            <div class="check-title">${getCategoryBadge(item.cat)} ${item.text}</div>
+            ${item.sub ? `<div class="check-sub">${item.sub}</div>` : ''}
+          </div>
+          <button class="btn-delete-item" title="刪除此項目" aria-label="刪除">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        `;
+
+        li.addEventListener("click", (e) => {
+          if (e.target.closest(".btn-delete-item")) {
+            e.stopPropagation();
+            deleteChecklistItem(item.id);
+            return;
+          }
+          item.done = !item.done;
+          saveChecklist();
+          renderChecklist();
+        });
+
+        container.appendChild(li);
+      });
+    }
+
+    function deleteChecklistItem(id) {
+      checklistItems = checklistItems.filter(i => i.id !== id);
+      saveChecklist();
+      renderChecklist();
+      showToast("已刪除該項裝備");
+    }
+
+    /* ==========================================================================
+       BUDGET & EXPENSES LOGIC & RENDERING
+       ========================================================================== */
+    function getCategoryTag(cat) {
+      switch(cat) {
+        case 'permit': return '<span class="cat-tag cat-permit">許可證/門票</span>';
+        case 'transport': return '<span class="cat-tag cat-transport">交通機票</span>';
+        case 'stay': return '<span class="cat-tag cat-stay">住宿生活</span>';
+        case 'field': return '<span class="cat-tag cat-field">田野訪談</span>';
+        case 'food': return '<span class="cat-tag cat-food">餐飲補給</span>';
+        default: return '<span class="cat-tag cat-misc">其他雜支</span>';
+      }
+    }
+
+    function renderBudget() {
+      const tbody = document.getElementById("expenseTableBody");
+      tbody.innerHTML = "";
+
+      let totalSpent = 0;
+      expenses.forEach(exp => {
+        totalSpent += exp.amount;
+      });
+
+      const remaining = totalBudget - totalSpent;
+
+      document.getElementById("dispTotalBudget").innerText = "$" + totalBudget.toLocaleString('en-US', { minimumFractionDigits: 2 });
+      document.getElementById("dispTotalBudgetTWD").innerText = "約 NT$ " + Math.round(totalBudget * exchangeRate).toLocaleString();
+
+      document.getElementById("dispTotalSpent").innerText = "$" + totalSpent.toLocaleString('en-US', { minimumFractionDigits: 2 });
+      document.getElementById("dispTotalSpentTWD").innerText = "約 NT$ " + Math.round(totalSpent * exchangeRate).toLocaleString();
+
+      const remElem = document.getElementById("dispRemaining");
+      remElem.innerText = "$" + remaining.toLocaleString('en-US', { minimumFractionDigits: 2 });
+      remElem.style.color = remaining < 0 ? "var(--accent-coral)" : "var(--accent-reef)";
+      document.getElementById("dispRemainingTWD").innerText = "約 NT$ " + Math.round(remaining * exchangeRate).toLocaleString();
+
+      // Sort by date descending
+      const sorted = [...expenses].sort((a,b) => new Date(b.date) - new Date(a.date));
+
+      if (sorted.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">目前尚無支出紀錄。請使用上方表單新增。</td></tr>`;
+        return;
+      }
+
+      sorted.forEach(exp => {
+        const tr = document.createElement("tr");
+        const twdVal = Math.round(exp.amount * exchangeRate);
+        tr.innerHTML = `
+          <td>${exp.date}</td>
+          <td>${getCategoryTag(exp.cat)}</td>
+          <td>
+            <strong>${exp.item}</strong>
+            ${exp.desc ? `<br><small style="color: var(--text-light);">${exp.desc}</small>` : ''}
+          </td>
+          <td style="font-weight: 700; color: var(--primary);">$${exp.amount.toFixed(2)}</td>
+          <td style="color: var(--text-muted);">NT$ ${twdVal.toLocaleString()}</td>
+          <td>
+            <button class="btn-delete-item" style="opacity: 0.8;" title="刪除此筆支出" data-exp-id="${exp.id}">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            </button>
+          </td>
+        `;
+
+        tr.querySelector(".btn-delete-item").addEventListener("click", () => {
+          expenses = expenses.filter(e => e.id !== exp.id);
+          saveExpenses();
+          renderBudget();
+          showToast("已刪除支出項目");
+        });
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    /* ==========================================================================
+       INITIALIZATION & EVENT LISTENERS
+       ========================================================================== */
+    document.addEventListener("DOMContentLoaded", () => {
+      // Set default date for expense input
+      const today = new Date().toISOString().split('T')[0];
+      const expDateInput = document.getElementById("expDate");
+      if (expDateInput) expDateInput.value = today;
+
+      // Render Initial Views
+      renderDateScroll();
+      renderItineraryDetail();
+      renderChecklist();
+      renderBudget();
+
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+
+      // Close mobile menu when nav link clicked
+      navLinks.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+        });
+      });
+
+      // Itinerary Filter buttons
+      document.querySelectorAll(".itinerary-controls .pill-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".itinerary-controls .pill-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentItineraryFilter = btn.dataset.filter;
+          renderDateScroll();
+          renderItineraryDetail();
+        });
+      });
+
+      // Checklist Category buttons
+      document.querySelectorAll(".checklist-categories .pill-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".checklist-categories .pill-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentChecklistCategory = btn.dataset.checkCat;
+          renderChecklist();
+        });
+      });
+
+      // Add Custom Checklist Item
+      const addChecklistForm = document.getElementById("addChecklistForm");
+      addChecklistForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const textInput = document.getElementById("newChecklistText");
+        const catSelect = document.getElementById("newChecklistCat");
+        const text = textInput.value.trim();
+        if (!text) return;
+
+        const newItem = {
+          id: "custom-" + Date.now(),
+          cat: catSelect.value,
+          text: text,
+          sub: "自訂備註項目",
+          done: false
+        };
+
+        checklistItems.unshift(newItem);
+        saveChecklist();
+        renderChecklist();
+        textInput.value = "";
+        showToast("已加入準備清單！");
+      });
+
+      // Toggle All Checklist
+      document.getElementById("btnToggleAll").addEventListener("click", () => {
+        const hasUnchecked = checklistItems.some(i => !i.done);
+        checklistItems.forEach(i => i.done = hasUnchecked);
+        saveChecklist();
+        renderChecklist();
+        showToast(hasUnchecked ? "已全選所有裝備" : "已取消全選");
+      });
+
+      // Reset Checklist to Default
+      document.getElementById("btnResetChecklist").addEventListener("click", () => {
+        if (confirm("確定要重設為預設行前準備清單嗎？這將會覆蓋自訂項目。")) {
+          checklistItems = JSON.parse(JSON.stringify(DEFAULT_CHECKLIST));
+          saveChecklist();
+          renderChecklist();
+          showToast("已還原預設準備清單");
+        }
+      });
+
+      // Add Expense Form
+      const addExpForm = document.getElementById("addExpenseForm");
+      addExpForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const date = document.getElementById("expDate").value;
+        const cat = document.getElementById("expCategory").value;
+        const amount = parseFloat(document.getElementById("expAmount").value);
+        const item = document.getElementById("expItem").value.trim();
+
+        if (isNaN(amount) || amount <= 0 || !item) {
+          alert("請輸入有效的支出金額與項目名稱！");
+          return;
+        }
+
+        const newExp = {
+          id: "exp-" + Date.now(),
+          date: date,
+          cat: cat,
+          item: item,
+          amount: amount,
+          desc: "青年手動登記支出"
+        };
+
+        expenses.unshift(newExp);
+        saveExpenses();
+        renderBudget();
+
+        document.getElementById("expAmount").value = "";
+        document.getElementById("expItem").value = "";
+        showToast("已成功記下一筆花費！");
+      });
+
+      // Exchange Rate Change
+      const rateInput = document.getElementById("exchangeRateInput");
+      rateInput.addEventListener("change", (e) => {
+        const val = parseFloat(e.target.value);
+        if (!isNaN(val) && val > 0) {
+          exchangeRate = val;
+          saveExpenses();
+          renderBudget();
+          showToast("匯率已更新為 1 USD = " + exchangeRate + " TWD");
+        }
+      });
+
+      // Reset Expenses to Default
+      document.getElementById("btnResetExpense").addEventListener("click", () => {
+        if (confirm("確定要重設為預設示範支出紀錄嗎？")) {
+          expenses = JSON.parse(JSON.stringify(DEFAULT_EXPENSES));
+          saveExpenses();
+          renderBudget();
+          showToast("已恢復預設支出紀錄");
+        }
+      });
+
+      // Export CSV
+      document.getElementById("btnExportCSV").addEventListener("click", () => {
+        if (expenses.length === 0) {
+          alert("目前無花費數據可匯出！");
+          return;
+        }
+        let csvContent = "\uFEFF日期,類別,項目名稱,美金(USD),台幣(TWD)\n";
+        expenses.forEach(e => {
+          const twd = Math.round(e.amount * exchangeRate);
+          csvContent += `"${e.date}","${e.cat}","${e.item.replace(/"/g, '""')}",${e.amount.toFixed(2)},${twd}\n`;
+        });
+        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.setAttribute("href", url);
+        link.setAttribute("download", `Palau_Budget_Expenses_${today}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        showToast("已匯出支出明細 CSV 檔案");
+      });
+    });
+  </script>
+</body>
+</html>
